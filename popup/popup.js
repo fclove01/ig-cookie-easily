@@ -68,11 +68,10 @@ document.addEventListener('DOMContentLoaded', () => {
     
     // --- Core Login Logic ---
     async function processSingleLogin(cookieString) {
-        
+
         // 1. Delete existing cookies
         const oldCookies = await getAllIgCookies();
         if (oldCookies.length > 0) {
-             console.log(`Removing ${oldCookies.length} old cookies...`);
             await Promise.all(oldCookies.map(removeIgCookie));
         }
 
@@ -145,9 +144,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         setLoading(false);
                         return; 
                     }
-                } else if (trimmedString) {
-                    console.log(`Skipping string (doesn't look like IG cookie): "${trimmedString.substring(0,50)}..."`);
-                }
+                } 
             } 
 
             if (!foundCandidate) {
