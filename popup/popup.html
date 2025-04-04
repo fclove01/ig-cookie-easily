@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IG Cookie Manager</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <label for="input">Cookie String:</label>
+        <div class="textarea-container">
+            <textarea id="input" placeholder="Dán chuỗi cookie vào đây..."></textarea>
+            <button id="copy-button" title="Sao chép nội dung">
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" viewBox="0 0 16 16">
+                    <path d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1h1a1 1 0 0 1 1 1V14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V3.5a1 1 0 0 1 1-1h1v-1z"/>
+                    <path d="M9.5 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h3zm-3-1A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3z"/>
+                  </svg>
+            </button>
+        </div>
+
+        <div class="button-group">
+            <button type="button" id="GET">GET</button>
+            <button type="button" id="LOG">LOG</button>
+        </div>
+        <div id="error-message" class="error-message"></div>
+
+        <details class="instructions">
+            <summary>► Hướng dẫn sử dụng</summary>
+            <ol>
+                <li>Nhấn <strong>GET</strong> để lấy chuỗi cookie Instagram đang dùng (nếu có).</li>
+                <li>Sao chép chuỗi cookie bạn muốn sử dụng.</li>
+                <li>Dán vào ô văn bản bên trên. Bạn có thể nhập chỉ cookie hoặc cả chuỗi có dấu | </li>
+                <li>Nhấn <strong>LOG</strong>. Tiện ích sẽ tìm và thử đăng nhập bằng chuỗi cookie Instagram hợp lệ đầu tiên tìm thấy.</li>
+            </ol>
+        </details>
+
+        <details class="warning">
+            <summary>⚠️ Cảnh báo & Miễn trừ trách nhiệm</summary>
+            <p>
+                Cookie chứa thông tin đăng nhập nhạy cảm. <strong>TUYỆT ĐỐI KHÔNG chia sẻ cookie của bạn với bất kỳ ai.</strong>
+                Việc sử dụng cookie từ các nguồn không đáng tin cậy có thể dẫn đến việc tài khoản của bạn bị xâm phạm.
+            </p>
+            <p>
+                Bạn hoàn toàn chịu trách nhiệm về việc sử dụng tiện ích này. Nhà phát triển không chịu trách nhiệm cho bất kỳ tổn thất hoặc thiệt hại nào đối với tài khoản Instagram của bạn phát sinh từ việc sử dụng tiện ích này. Hãy sử dụng một cách thận trọng và có hiểu biết.
+            </p>
+        </details>
+
+        <div class="github-link">
+            Mã nguồn mở trên <a href="YOUR_GITHUB_REPO_LINK_HERE" target="_blank" rel="noopener noreferrer">GitHub</a>.
+        </div>
+
+    </div>
+    <script src="popup.js"></script>
+</body>
+</html>

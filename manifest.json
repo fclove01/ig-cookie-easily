@@ -1,0 +1,26 @@
+{
+  "manifest_version": 3,
+  "name": "Instagram Cookie Manager",
+  "version": "1.0.0",
+  "description": "Get and Set Instagram cookies easily.",
+  "permissions": [
+    "cookies", 
+    "activeTab"  
+  ],
+  "host_permissions": [
+    "*://*.instagram.com/"
+  ],
+  "action": {
+    "default_popup": "popup/popup.html",
+    "default_icon": {
+      "16": "images/icon.png", 
+      "48": "images/icon.png", 
+      "128": "images/icon.png" 
+    }
+  },
+  "icons": {
+      "16": "images/icon.png",
+      "48": "images/icon.png",
+      "128": "images/icon.png"
+  }
+}
