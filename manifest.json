@@ -1,11 +1,10 @@
 {
   "manifest_version": 3,
   "name": "Instagram Cookie Manager",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Get and Set Instagram cookies easily.",
   "permissions": [
-    "cookies", 
-    "activeTab"  
+    "cookies"
   ],
   "host_permissions": [
     "*://*.instagram.com/"
